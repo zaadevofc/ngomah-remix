@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
-import { FaCarSide, FaHistory } from "react-icons/fa";
-import { FaBoltLightning, FaCircleDot, FaEllipsis, FaLocationDot, FaStar, FaWallet } from "react-icons/fa6";
+import { FaCarSide, FaHistory, FaStarHalfAlt } from "react-icons/fa";
+import { FaBoltLightning, FaCircleDot, FaEllipsis, FaLocationDot, FaRegStar, FaStar, FaWallet } from "react-icons/fa6";
 import { GoDot } from "react-icons/go";
 import { TbHelmet } from "react-icons/tb";
 import ContainerHp from "~/components/ContainerHp";
@@ -172,6 +172,13 @@ export default function Index() {
                       <FaCircleDot className='fill-blue-600' />
                       <h1 className="font-[Poppins] line-clamp-1">SMK Negeri 2 Sukoharjo</h1>
                     </div>
+                  </div>
+                  <div className="flex flex-row items-center gap-2 mt-4 text-lg">
+                    <FaStar className='text-amber-500' />
+                    <FaStar className='text-amber-500' />
+                    <FaStar className='text-amber-500' />
+                    <FaStarHalfAlt className='text-amber-500' />
+                    <FaRegStar className='text-amber-500' />
                   </div>
                 </div>
               </div>
