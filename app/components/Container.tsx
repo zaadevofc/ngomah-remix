@@ -1,5 +1,5 @@
 
-const ContainerHp = (props: any) => {
+const Container = (props: any) => {
   return (
     <>
       <div className={`${props.className} flex mx-auto sm:max-w-sm`}>
@@ -9,4 +9,4 @@ const ContainerHp = (props: any) => {
   );
 };
 
-export default ContainerHp;
+export default Container;

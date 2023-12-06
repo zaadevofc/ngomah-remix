@@ -3,7 +3,7 @@ import { FaCarSide, FaHistory, FaStarHalfAlt } from "react-icons/fa";
 import { FaBoltLightning, FaCircleDot, FaEllipsis, FaLocationDot, FaRegStar, FaStar, FaWallet } from "react-icons/fa6";
 import { GoDot } from "react-icons/go";
 import { TbHelmet } from "react-icons/tb";
-import ContainerHp from "~/components/ContainerHp";
+import Container from "~/components/Container";
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,7 +15,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <>
-      <ContainerHp className='border-x border-black h-full flex-col'>
+      <Container className='border-x border-black h-full flex-col'>
         <div className="flex flex-col">
           <div className="bg-white drop-shadow-md flex flex-row justify-between w-full items-center py-3 px-5 gap-5 rounded-b-xl">
             <input type="text" placeholder="Mau pergi kemana hari ini?" className="input input-sm p-5 py-6 input-bordered w-full" />
@@ -203,7 +203,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </ContainerHp>
+      </Container>
     </>
   );
 }
