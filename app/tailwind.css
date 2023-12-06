@@ -10,6 +10,10 @@ input {
   @apply !rounded-3xl !border !border-slate-400 !outline-none;
 }
 
+.click {
+  @apply active:scale-[.99] sm:cursor-pointer;
+}
+
 .default-border {
   @apply border border-slate-400;
 }
@@ -23,4 +27,8 @@ input {
 .hide-scroll::-webkit-scrollbar-thumb {
   border-radius: 0px !important;
   /* background-color: rgb(16 185 129); */
+}
+
+Image, img {
+  @apply select-none;
 }

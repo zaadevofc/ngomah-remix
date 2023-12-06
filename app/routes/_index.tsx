@@ -7,8 +7,8 @@ import ContainerHp from "~/components/ContainerHp";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Ngomah | Ngojek Muslimah" },
+    { name: "description", content: "Tin tin!!! Ojek Online mau lewatt ~" },
   ];
 };
 
@@ -121,7 +121,7 @@ export default function Index() {
             </div>
             <div className="flex flex-row gap-3 overflow-x-auto py-5">
               {[...new Array(7)].map((x, i) => (
-                <div className="card min-w-[200px] bg-base-100 drop-shadow-md sm:cursor-pointer">
+                <div className="card min-w-[200px] click bg-base-100 drop-shadow-md sm:cursor-pointer">
                   <figure className="h-[120px] rounded-2xl">
                     <img src="/peta.jpg" alt="Shoes" />
                   </figure>
@@ -145,14 +145,14 @@ export default function Index() {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col mt-5 pb-40">
+            <div className="flex flex-col mt-5">
               <div className="flex flex-row items-center justify-between">
-                <div className="flex flex-col justify-start -space-y-1">
-                  <h1 className="font-bold tracking-wide text-lg">Kasih rating ke driver</h1>
-                  <h1 className="text-sm">Biar driver makin semangat ✨</h1>
+                <div className="flex flex-col justify-start">
+                  <h1 className="font-bold tracking-wide">Kasih rating ke driver</h1>
+                  <h1 className="text-[13px]">Biar driver makin semangat ✨</h1>
                 </div>
               </div>
-              <div className="flex flex-row rounded-2xl p-5 gap-5 items-center drop-shadow-md my-5 bg-green-500/10 border border-green-600">
+              <div className="flex flex-row click rounded-2xl p-5 gap-5 items-center drop-shadow-md my-5 bg-green-500/10 border border-green-600">
                 <div className="">
                   <img className="rounded-full border-4 border-green-600 object-cover w-28 h-full" src="https://avatars.githubusercontent.com/u/93970726?v=4" alt="" />
                 </div>
@@ -163,7 +163,7 @@ export default function Index() {
                   <div className="flex flex-col items-start">
                     <div className="flex flex-row gap-2 items-center text-sm">
                       <FaLocationDot className='fill-amber-600' />
-                      <h1 className="font-[Poppins] line-clamp-1">Rumah Keja</h1>
+                      <h1 className="font-[Poppins] line-clamp-1">Rumah Kejaa</h1>
                     </div>
                     <div className="flex flex-col ml-[.8px] text-xs">
                       <GoDot />
@@ -181,6 +181,24 @@ export default function Index() {
                     <FaRegStar className='text-amber-500' />
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="flex flex-col mt-3 pb-40">
+              <div className="flex flex-row items-center justify-between">
+                <div className="flex flex-col justify-start">
+                  <h1 className="font-bold tracking-wide">Rekomendasi buatmu</h1>
+                  <h1 className="text-[13px]">Tempat wisata yang ciamik 💖</h1>
+                </div>
+              </div>
+              <div className="flex flex-row gap-3 overflow-x-auto py-5">
+                {[...new Array(12)].map(x => (
+                  <div className="flex flex-col rounded-2xl h-52 bg-[url('/bg/wisata-4.webp')] bg-center relative min-w-full">
+                    <div className="rounded-2xl bg-gradient-to-b from-gray-200/5 via-gray-500/80 to-gray-800 absolute top-0 z-[1] h-full w-full flex flex-col p-4 text-white justify-end">
+                      <h1 className="font-[poppins] font-bold text-2xl">Taman Pelangi</h1>
+                      <p>Jl. Slamet riyadi No. 0, Jatisari, Indonesia, Negara Kita</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
