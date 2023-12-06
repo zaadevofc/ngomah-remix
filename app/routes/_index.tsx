@@ -1,4 +1,8 @@
 import type { MetaFunction } from "@remix-run/node";
+import { FaCarSide, FaHistory } from "react-icons/fa";
+import { FaArrowTrendUp, FaBoltLightning, FaEllipsis, FaStar, FaWallet } from "react-icons/fa6";
+import { TbHelmet } from "react-icons/tb";
+import ContainerHp from "~/components/ContainerHp";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,33 +13,161 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <>
+      <ContainerHp className='border-x border-black h-full flex-col'>
+        <div className="flex flex-col">
+          <div className="bg-white drop-shadow-md flex flex-row justify-between w-full items-center py-3 px-5 gap-5 rounded-b-xl">
+            <input type="text" placeholder="Mau pergi kemana hari ini?" className="input input-sm p-5 py-6 input-bordered w-full" />
+            <img className="w-10 h-10 rounded-full" src="https://avatars.githubusercontent.com/u/93970726?v=4" alt="" />
+          </div>
+          <div className="w-full h-52 bg-green-600 -mt-2 -z-[1] flex justify-center items-center relative">
+            <h1 className="text-white font-bold text-3xl font-['Aoboshi_One'] mb-6">Ngojek Muslimah</h1>
+            <div className="absolute -bottom-8 w-full px-5">
+              <div className="flex flex-row drop-shadow-md bg-white rounded-3xl justify-between default-border px-5 py-2">
+                <div className="flex flex-row items-center gap-3">
+                  <div className="bg-green-500/20 p-3 rounded-full text-green-700 text-[16px]">
+                    <FaWallet />
+                  </div>
+                  <div className="flex flex-col leading-tight text-sm">
+                    <h1 className="font-bold">Rp99.999.999</h1>
+                    <h1 className="text-gray-600 font-medium text-[13px]">Top Up saldo</h1>
+                  </div>
+                </div>
+                {/* <span className="h-auto w-[.5px] bg-slate-400"></span> */}
+                <div className="flex flex-row gap-3 justify-between items-center">
+                  <div className="flex flex-col gap-1 items-center">
+                    <div className="bg-green-600 text-sm p-2 w-fit rounded-xl text-white">
+                      <FaCarSide />
+                    </div>
+                    <h1 className="text-xs font-semibold">Pergi</h1>
+                  </div>
+                  <div className="flex flex-col gap-1 items-center ml-2">
+                    <div className="bg-green-600 text-sm p-2 w-fit rounded-xl text-white">
+                      <FaBoltLightning />
+                    </div>
+                    <h1 className="text-xs font-semibold">Kirim</h1>
+                  </div>
+                  <div className="indicator">
+                    <span className="indicator-item badge bg-red-500 right-2 top-0.5 !px-1.5 text-white font-bold py-2 text-[10px]">3</span>
+                    <div className="flex flex-col gap-1 items-center">
+                      <div className="bg-green-600 text-sm p-2 w-fit rounded-full text-white">
+                        <FaEllipsis />
+                      </div>
+                      <h1 className="text-xs font-semibold">Lainnya</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 px-7 mt-16 gap-5">
+            <div className="flex flex-col gap-1 items-center">
+              <div className="bg-green-500/30 w-fit p-3 rounded-2xl border border-green-600 drop-shadow-lg relative">
+                <FaCarSide className='text-2xl text-green-800' />
+              </div>
+              <h1 className="text-sm">Pergi</h1>
+            </div>
+            <div className="flex flex-col gap-1 items-center">
+              <div className="bg-green-500/30 w-fit p-3 rounded-2xl border border-green-600 drop-shadow-lg relative">
+                <FaCarSide className='text-2xl text-green-800' />
+              </div>
+              <h1 className="text-sm">Pergi</h1>
+            </div>
+            <div className="flex flex-col gap-1 items-center">
+              <div className="bg-green-500/30 w-fit p-3 rounded-2xl border border-green-600 drop-shadow-lg relative">
+                <FaCarSide className='text-2xl text-green-800' />
+              </div>
+              <h1 className="text-sm">Pergi</h1>
+            </div>
+            <div className="flex flex-col gap-1 items-center">
+              <div className="bg-green-500/30 w-fit p-3 rounded-2xl border border-green-600 drop-shadow-lg relative">
+                <FaCarSide className='text-2xl text-green-800' />
+              </div>
+              <h1 className="text-sm">Pergi</h1>
+            </div>
+            <div className="flex flex-col gap-1 items-center">
+              <div className="bg-green-500/30 w-fit p-3 rounded-2xl border border-green-600 drop-shadow-lg relative">
+                <FaCarSide className='text-2xl text-green-800' />
+              </div>
+              <h1 className="text-sm">Pergi</h1>
+            </div>
+            <div className="flex flex-col gap-1 items-center">
+              <div className="bg-sky-500/30 w-fit p-3 rounded-2xl border border-sky-600 drop-shadow-lg">
+                <FaBoltLightning className='text-2xl text-sky-800' />
+              </div>
+              <h1 className="text-sm">Kirim</h1>
+            </div>
+            <div className="flex flex-col gap-1 items-center">
+              <div className="bg-purple-500/30 w-fit p-3 rounded-2xl border border-purple-600 drop-shadow-lg">
+                <FaWallet className='text-2xl text-purple-800' />
+              </div>
+              <h1 className="text-sm">Top Up</h1>
+            </div>
+            <div className="flex flex-col gap-1 items-center">
+              <div className="bg-amber-500/30 w-fit p-3 rounded-2xl border border-amber-600 drop-shadow-lg">
+                <FaHistory className='text-2xl text-amber-800' />
+              </div>
+              <h1 className="text-sm">Riwayat</h1>
+            </div>
+          </div>
+          <div className="flex flex-col p-4 mt-5">
+            <div className="flex flex-row items-center justify-between">
+              <div className="flex flex-col justify-start">
+                <h1 className="font-bold tracking-wide">Riwayat perjalanan mu</h1>
+                <h1 className="text-[13px]">Semua riwayat udah kesimpen ~</h1>
+              </div>
+              <p className="text-sm text-slate-500">Lihat lainnya</p>
+            </div>
+            <div className="flex flex-row gap-3 overflow-x-auto py-5">
+              {[...new Array(7)].map((x, i) => (
+                <div className="card min-w-[200px] bg-base-100 drop-shadow-md sm:cursor-pointer">
+                  <figure className="h-[120px] rounded-2xl">
+                    <img src="/peta.jpg" alt="Shoes" />
+                  </figure>
+                  <div className="card-body text-sm p-4">
+                    <h1 className="card-title text-sm line-clamp-2">
+                      SMK Negeri 2 Sukoharjo
+                    </h1>
+                    <h1 className="text-gray-500 -mt-1">34km</h1>
+                    <div className="flex flex-row items-center gap-2">
+                      <TbHelmet className='text-black text-lg fill-green-500' />
+                      <h1 className="text-gray-700 font-semibold">Sischa Ayu</h1>
+                    </div>
+                    <div className="flex flex-row items-center justify-between">
+                      <div className="flex flex-row items-center gap-2">
+                        <FaStar className='text-black text-lg fill-yellow-500' />
+                        <h1 className="text-gray-700 font-semibold">4.7</h1>
+                      </div>
+                      <h1 className="text-gray-500 font-semibold">Rp24.000</h1>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-col mt-5 pb-40">
+              <div className="flex flex-row items-center justify-between">
+                <div className="flex flex-col justify-start -space-y-1">
+                  <h1 className="font-bold tracking-wide text-lg">Kasih rating ke driver</h1>
+                  <h1 className="text-sm">Biar driver makin semangat ✨</h1>
+                </div>
+              </div>
+              <div className="flex flex-row rounded-2xl p-5 gap-8 items-center drop-shadow-md my-5 bg-white border border-green-600">
+                <div className="">
+                  <img className="rounded-full border-4 border-green-600 object-cover w-32 h-full" src="https://avatars.githubusercontent.com/u/93970726?v=4" alt="" />
+                </div>
+                <div className="flex flex-col">
+                  <h1 className="font-extrabold text-xl tracking-wide font-[Poppins]">Sischa Ayu</h1>
+                  <div className="flex flex-row items-center gap-2">
+                    <FaArrowTrendUp className='fill-blue-600' />
+                    <h1 className="text-sm font-[Poppins]">345 Trip</h1>
+                  </div>
+                  <h1 className="text-sm font-[Poppins]">34km</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ContainerHp>
+    </>
   );
 }

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-['Plus_Jakarta_Sans'] hide-scroll;
+}
+
+input {
+  @apply !rounded-3xl !border !border-slate-400 !outline-none;
+}
+
+.default-border {
+  @apply border border-slate-400;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  /* background-color: #F5F5F5; */
+}
+
+.hide-scroll::-webkit-scrollbar-thumb {
+  border-radius: 0px !important;
+  /* background-color: rgb(16 185 129); */
+}
