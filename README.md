@@ -1,0 +1,1 @@
+## problem gataoo, ganti make astro [disini](https://github.com/zaadevofc/ngomah-astro)
